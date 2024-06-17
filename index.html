@@ -9,13 +9,29 @@
   <body>
     <form>
       <input type="text" placeholder="Search city..." />
-      <ul>
-        <li>Test 1 <span>US</span></li>
-        <li>Test 2</li>
-        <li>Test 3</li>
-        <li>Test 4</li>
-        <li>Test 5</li>
-      </ul>
+      <ul></ul>
     </form>
+    <div id="weather" style="display: none">
+      <img src="" alt="" id="icon" />
+      <h1 id="degrees">20&#8457;</h1>
+      <h2 id="city">Chicago</h2>
+      <button id="change">change city</button>
+      <div class="info">
+        <div>
+          <h3>Wind</h3>
+          <div id="windValue" class="value">2<span>km/h</span></div>
+        </div>
+        <div>
+          <h3>Feels like</h3>
+          <div id="feelsLikeValue" class="value">2<span>km/h</span></div>
+        </div>
+        <div>
+          <h3>Humidity</h3>
+          <div id="humidityValue" class="value">2<span>km/h</span></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="weather.js"></script>
   </body>
 </html>
