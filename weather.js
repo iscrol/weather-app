@@ -2,7 +2,7 @@ const key = '1c2029afa33193c1d580c51d43bfbbeb';
 
 async function search() {
   const phrase = document.querySelector('input[type="text"]').value;
-  const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${phrase}&limit=5&appid=${key}`);
+  const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${phrase}&limit=5&appid=${key}`);
   const data = await response.json();
 
   const formUl = document.querySelector('form ul');
